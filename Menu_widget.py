@@ -19,7 +19,7 @@ mainmenu.add_command(label = 'Справка')
 
 root.mainloop()
 
-'''В данном случае "Файл" и "Справка" – это команды. К ним можно добавить опцию
+'''В данном случае 'Файл' и 'Справка' – это команды. К ним можно добавить опцию
 command, связав тем самым с какой-либо функцией-обработчиком клика. Хотя такой
 вариант меню имеет право на существование, в большинстве приложений панель меню
 содержит выпадающие списки команд, а сами пункты на панели командами по сути не
@@ -36,17 +36,17 @@ mainmenu = Menu(root)
 root.config(menu = mainmenu)
 
 filemenu = Menu(mainmenu, tearoff = 0)
-filemenu.add_command(label = "Открыть...")
-filemenu.add_command(label = "Новый")
-filemenu.add_command(label = "Сохранить...")
-filemenu.add_command(label = "Выход")
+filemenu.add_command(label = 'Открыть...')
+filemenu.add_command(label = 'Новый')
+filemenu.add_command(label = 'Сохранить...')
+filemenu.add_command(label = 'Выход')
 
 helpmenu = Menu(mainmenu, tearoff = 0)
-helpmenu.add_command(label = "Помощь")
-helpmenu.add_command(label = "О программе")
+helpmenu.add_command(label = 'Помощь')
+helpmenu.add_command(label = 'О программе')
 
-mainmenu.add_cascade(label = "Файл", menu = filemenu)
-mainmenu.add_cascade(label = "Справка", menu = helpmenu)
+mainmenu.add_cascade(label = 'Файл', menu = filemenu)
+mainmenu.add_cascade(label = 'Справка', menu = helpmenu)
 
 root.mainloop()
 
