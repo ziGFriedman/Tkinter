@@ -18,7 +18,7 @@ height эти параметры можно изменить. Единицами
 (и установки курсора мыши над кнопкой).'''
 
 root = Tk()
-b1 = Button(text = "Изменить", width = 15, height = 3)
+b1 = Button(text="Изменить", width=15, height=3)
 
 def change():
     b1['text'] = "Изменено"
@@ -27,7 +27,8 @@ def change():
     b1['fg'] = '#ffffff'
     b1['activeforeground'] = '#ffffff'
 
-b1.config(command = change)    # Здесь свойство command устанавливается с помощью метода config(). Однако можно было сделать и так: b1['command'] = change
+b1.config(command=change)    # Здесь свойство command устанавливается с помощью метода config().
+# Однако можно было сделать и так: b1['command'] = change
 
 b1.pack()
 root.mainloop()
