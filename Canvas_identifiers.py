@@ -16,11 +16,11 @@ from tkinter import *
 
 root = Tk()
 
-c = Canvas(width = 300, height = 300, bg = 'white')
+c = Canvas(width=300, height=300, bg='white')
 c.focus_set()
 c.pack()
 
-ball = c.create_oval(140, 140, 160, 160, fill = 'green')
+ball = c.create_oval(140, 140, 160, 160, fill='green')
 
 c.bind('<Up>', lambda event: c.move(ball, 0, -2))
 c.bind('<Down>', lambda event: c.move(ball, 0, 2))
@@ -41,13 +41,13 @@ from tkinter import *
 
 root = Tk()
 
-c = Canvas(width = 200, height = 200, bg = 'white')
+c = Canvas(width=200, height=200, bg='white')
 c.pack()
 
-rect = c.create_rectangle(80, 80, 120, 120, fill = 'lightgreen')
+rect = c.create_rectangle(80, 80, 120, 120, fill='lightgreen')
 
 def inFocus(event):
-    c.itemconfig(rect, fill = 'green', width = 2)
+    c.itemconfig(rect, fill='green', width=2)
     c.coords(rect, 70, 70, 130, 130)
 
 c.bind('<FocusIn>', inFocus)
