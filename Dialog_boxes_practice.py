@@ -24,7 +24,8 @@ def insert_text():
 
 def extract_text():
     try:
-        file_name = fd.asksaveasfilename(filetypes = (('TXT files', '*.txt'), ('HTML files', '*.html; *.htm'), ('All files', '*.*')))
+        file_name = fd.asksaveasfilename(filetypes=(('TXT files', '*.txt'), (
+            'HTML files', '*.html; *.htm'), ('All files', '*.*')))
         f = open(file_name, 'w')
         s = text.get(1.0, END)
         f.write(s)
@@ -33,16 +34,16 @@ def extract_text():
         mb.showinfo('Внимание', 'Файл не сохранён')
 
 def delete_text():
-    answer = mb.askyesno('Подтверждение', message = 'Вы хотите удалить текст?')
+    answer = mb.askyesno('Подтверждение', message='Вы хотите удалить текст?')
     if answer == True:
         text.delete(0.0, END)
 
 root = Tk()
-text = Text(width = 50, height = 25)
-text.grid(columnspan = 2)
+text = Text(width=50, height=25)
+text.grid(columnspan=2)
 
-Button(text = 'Открыть', command = insert_text).grid(row = 1, sticky = E)
-Button(text = 'Сохранить', command = extract_text).grid(row = 1, column = 1, sticky = W)
-Button(text = 'Очистить', command = delete_text).grid(row = 1, column = 1)
+Button(text='Открыть', command=insert_text).grid(row=1, sticky=E)
+Button(text='Сохранить', command=extract_text).grid(row=1, column=1, sticky=W)
+Button(text='Очистить', command=delete_text).grid(row=1, column=1)
 
 root.mainloop()
