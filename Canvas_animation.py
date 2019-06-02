@@ -4,10 +4,10 @@
 from tkinter import *
 
 root = Tk()
-c = Canvas(root, width = 300, height = 200, bg = 'white')
+c = Canvas(root, width = 300, height=200, bg='white')
 c.pack()
 
-ball = c.create_oval(0, 100, 40, 140, fill = 'green')
+ball = c.create_oval(0, 100, 40, 140, fill='green')
 
 def motion():
     c.move(ball, 1, 0)
@@ -32,10 +32,10 @@ from tkinter import *
 root = Tk()
 
 root.title('Мяч догоняет мышь')
-c = Canvas(root, width = 300, height = 200, bg = 'white')
+c = Canvas(root, width=300, height=200, bg='white')
 c.pack()
 
-ball = c.create_oval(0, 100, 20, 120, fill = 'green')
+ball = c.create_oval(0, 100, 20, 120, fill='green')
 
 def mouse(event):
     x = event.x
@@ -52,7 +52,8 @@ def move(x, y):
         c.move(ball, 0, 1)
     if (c.coords(ball)[3] + c.coords(ball)[1]) / 2 > y:
         c.move(ball, 0, -1)
-    if (c.coords(ball)[3] + c.coords(ball)[1]) / 2 != y or (c.coords(ball)[2] + c.coords(ball)[0]) / 2 != x :
+    if (c.coords(ball)[3] + c.coords(ball)[1]) / 2 != y or (
+        c.coords(ball)[2] + c.coords(ball)[0]) / 2 != x :
         root.after(10, move, x, y)
     else:
         root.bind('<Button-1>', mouse)
