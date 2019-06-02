@@ -22,12 +22,13 @@ class Color:
     }
 
     def __init__(self, master):
-        self.label = Label(master, text = 'нажми на кнопку', anchor = 'c')
+        self.label = Label(master, text='нажми на кнопку', anchor='c')
         self.label.pack()
-        self.entry = Entry(master, justify = CENTER)
+        self.entry = Entry(master, justify=CENTER)
         self.entry.pack()
         for key, value in self.color.items():
-            exec('Button(master, width = 18, command = self.key{2}value, bg = "{0}", text = "{1}").pack()'.format(key, value, key[1:]))    # exec - динамически генерируемый код
+            exec('Button(master, width = 18, command = self.key{2}value, bg = "{0}", text = "{1}").pack()'.
+                format(key, value, key[1:]))    # exec - динамически генерируемый код
 
     for key, value in color.items():
         def bindedfunc(self, v = value, k = key):
