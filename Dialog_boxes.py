@@ -18,7 +18,7 @@ from tkinter import *
 from tkinter import messagebox as mb
 
 def check():
-    answer = mb.askyesno(title = 'Вопрос', message = 'Перенести данные?')
+    answer = mb.askyesno(title='Вопрос', message='Перенести данные?')
     if answer == True:
         s = entry.get()
         entry.delete(0, END)
@@ -27,8 +27,8 @@ def check():
 root = Tk()
 entry = Entry()
 entry.pack(pady=10)
-Button(text = 'Передать', command = check).pack()
-label = Label(height = 3)
+Button(text='Передать', command=check).pack()
+label = Label(height=3)
 label.pack()
 
 root.mainloop()
@@ -56,4 +56,4 @@ root.mainloop()
 #     else:
 #         entry.delete(0, END)
 #         label['text'] = s
-# … 
+# …
