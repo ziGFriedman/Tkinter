@@ -12,10 +12,10 @@ from tkinter import *
 
 root = Tk()
 
-e1 = Entry(width = 50)
+e1 = Entry(width=50)
 def insert():
     e1.insert(0, "Tkinter - GUI ")
-b = Button(text = "Вставить", command = insert)
+b = Button(text="Вставить", command=insert)
 e1.pack()
 b.pack()
 
