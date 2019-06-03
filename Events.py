@@ -33,7 +33,7 @@ def move(event):
     root.title(s)
 
 root = Tk()
-root.minsize(width = 500, height = 400)
+root.minsize(width=500, height=400)
 
 root.bind('<Button-1>', b1)
 root.bind('<Button-3>', b3)
@@ -64,7 +64,7 @@ def exitWin(event):
 
 def inLabel(event):
     t = ent.get()
-    lbl.configure(text = t)
+    lbl.configure(text=t)
 
 def selectAll(event):
     root.after(10, select_all, event.widget)
@@ -75,11 +75,11 @@ def select_all(widget):
 
 root = Tk()
 
-ent = Entry(width = 40)
+ent = Entry(width=40)
 ent.focus_set()
 ent.pack()
-lbl = Label(height = 3, fg = 'orange', bg = 'darkgreen', font = "Verdana 24")
-lbl.pack(fill = X)
+lbl = Label(height=3, fg='orange', bg='darkgreen', font="Verdana 24")
+lbl.pack(fill=X)
 
 ent.bind('<Return>', inLabel)
 ent.bind('<Control-a>', selectAll)
