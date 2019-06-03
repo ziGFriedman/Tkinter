@@ -6,25 +6,25 @@ from tkinter import *
 root = Tk()
 
 mainmenu = Menu(root)
-root.config(menu = mainmenu)
+root.config(menu=mainmenu)
 
-filemenu = Menu(mainmenu, tearoff = 0)
-filemenu.add_command(label = 'Открыть...')
-filemenu.add_command(label = 'Новый')
-filemenu.add_command(label = 'Сохранить...')
-filemenu.add_command(label = 'Выход')
+filemenu = Menu(mainmenu, tearoff=0)
+filemenu.add_command(label='Открыть...')
+filemenu.add_command(label='Новый')
+filemenu.add_command(label='Сохранить...')
+filemenu.add_command(label='Выход')
 
-helpmenu = Menu(mainmenu, tearoff = 0)
+helpmenu = Menu(mainmenu, tearoff=0)
 
-helpmenu2 = Menu(helpmenu, tearoff = 0)
-helpmenu2.add_command(label = 'Локальная справка')
-helpmenu2.add_command(label = 'На сайте')
+helpmenu2 = Menu(helpmenu, tearoff=0)
+helpmenu2.add_command(label='Локальная справка')
+helpmenu2.add_command(label='На сайте')
 
-helpmenu.add_cascade(label = 'Помощь', menu = helpmenu2)
-helpmenu.add_command(label = 'О программе')
+helpmenu.add_cascade(label='Помощь', menu=helpmenu2)
+helpmenu.add_command(label='О программе')
 
-mainmenu.add_cascade(label = 'Файл', menu = filemenu)
-mainmenu.add_cascade(label = 'Справка', menu = helpmenu)
+mainmenu.add_cascade(label='Файл', menu=filemenu)
+mainmenu.add_cascade(label='Справка', menu=helpmenu)
 
 root.mainloop()
 
@@ -45,7 +45,7 @@ def square():
     c.create_rectangle(x, y, x + 30, y + 30)
 
 def triangle():
-    c.create_polygon(x, y, x - 15, y + 30, x + 15, y + 30, fill = 'white', outline = 'black')    # закрашивают треугольник
+    c.create_polygon(x, y, x - 15, y + 30, x + 15, y + 30, fill='white', outline='black')    # закрашивают треугольник
 
 def popup(event):
     global x, y
@@ -55,13 +55,13 @@ def popup(event):
 
 root = Tk()
 
-c = Canvas(width = 300, height = 300, bg = 'white')
+c = Canvas(width=300, height=300, bg='white')
 c.pack()
 
 menu = Menu(tearoff = 0)
-menu.add_command(label = 'Круг', command = circle)
-menu.add_command(label = 'Квадрат', command = square)
-menu.add_command(label = 'Треугольник', command = triangle)
+menu.add_command(label='Круг', command=circle)
+menu.add_command(label='Квадрат', command=square)
+menu.add_command(label='Треугольник', command=triangle)
 
 x = 0
 y = 0
