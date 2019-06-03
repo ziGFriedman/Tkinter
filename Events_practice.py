@@ -14,7 +14,7 @@ def bg_fin(event):
 
 def bg_fout(event):
     text['bg'] = 'lightgray'
-    
+
 def tw_change(event):
     a = e1.get()
     b = e2.get()
@@ -38,13 +38,13 @@ fr2 = Frame(fr1)
 fr1.pack(side = TOP)
 fr2.pack(side = RIGHT)
 
-e1 =Entry(fr1, width = 5)
-e2 = Entry(fr1, width = 5)
-b =Button(fr2, text = 'Изменить')
-text = Text(bg = 'lightgray')
+e1 =Entry(fr1, width=5)
+e2 = Entry(fr1, width=5)
+b =Button(fr2, text='Изменить')
+text = Text(bg='lightgray')
 
-e1.pack(pady = 2)
-e2.pack(pady = 2)
+e1.pack(pady=2)
+e2.pack(pady=2)
 b.pack()
 text.pack()
 
