@@ -5,8 +5,8 @@ from tkinter import *
 
 root = Tk()
 
-l1 = Label(bg = "lightgreen", width = 30, height = 10, text = "This is a label")
-l1.pack(expand = 1, fill = BOTH)
+l1 = Label(bg="lightgreen", width=30, height=10, text="This is a label")
+l1.pack(expand=1, fill=BOTH)
 
 root.mainloop()
 
