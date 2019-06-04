@@ -15,7 +15,7 @@ def change(event):
     b['fg'] = "red"
     b['activeforeground'] = "red"
 
-b = Button(text = 'RED', width = 10, height = 3)
+b = Button(text='RED', width=10, height=3)
 b.bind('<Button-1>', change)
 b.bind('<Return>', change)
 
@@ -38,7 +38,7 @@ root = Tk()
 
 class RedButton:
     def __init__(self):
-        self.b = Button(text = 'RED', width = 10, height = 3)
+        self.b = Button(text='RED', width=10, height=3)
         self.b.bind('<Button-1>', self.change)
         self.b.pack()
     def change(self, event):
