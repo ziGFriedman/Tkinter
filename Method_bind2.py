@@ -10,7 +10,7 @@ def font1(event):
 def font2(event):
     l['font'] = "Times"
 
-l = Label(text = "Hello World")
+l = Label(text="Hello World")
 
 l.bind('<Button-1>', font1) # ЛКМ
 l.bind('<Button-3>', font2) # ПКМ
@@ -51,9 +51,9 @@ root = Tk()
 def changeFont(font):
     l['font'] = font
 
-l = Label(text = "Hello World")
+l = Label(text="Hello World")
 l.pack()
-Button(command = lambda f = "Verdana": changeFont(f)).pack()
-Button(command = lambda f = "Times": changeFont(f)).pack()
+Button(command=lambda f="Verdana": changeFont(f)).pack()
+Button(command=lambda f="Times": changeFont(f)).pack()
 
 root.mainloop()
