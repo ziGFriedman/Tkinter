@@ -19,10 +19,10 @@ from tkinter import *
 
 root = Tk()
 
-l1 = Label(width = 7, height = 4, bg = 'yellow', text = "1")
-l2 = Label(width = 7, height = 4, bg = 'orange', text = "2")
-l3 = Label(width = 7, height = 4, bg = 'lightgreen', text = "3")
-l4 = Label(width = 7, height = 4, bg = 'lightblue', text = "4")
+l1 = Label(width=7, height=4, bg='yellow', text="1")
+l2 = Label(width=7, height=4, bg='orange', text="2")
+l3 = Label(width=7, height=4, bg='lightgreen', text="3")
+l4 = Label(width=7, height=4, bg='lightblue', text="4")
 
 '''Рассмотрим разные комбинации значений сайда:'''
 # С верху в низ
@@ -73,17 +73,17 @@ f_bot = Frame(root)
 # f_top = LabelFrame(text="Верх")
 # f_bot = LabelFrame(text="Низ")
 
-l1 = Label(f_top, width = 7, height = 4, bg = 'yellow', text = "1")
-l2 = Label(f_top, width = 7, height = 4, bg = 'orange', text = "2")
-l3 = Label(f_bot, width = 7, height = 4, bg = 'lightgreen', text = "3")
-l4 = Label(f_bot, width = 7, height = 4, bg = 'lightblue', text = "4")
+l1 = Label(f_top, width=7, height=4, bg='yellow', text="1")
+l2 = Label(f_top, width=7, height=4, bg='orange', text="2")
+l3 = Label(f_bot, width=7, height=4, bg='lightgreen', text="3")
+l4 = Label(f_bot, width=7, height=4, bg='lightblue', text="4")
 
-f_top.pack(padx = 10, pady = 10)
-f_bot.pack(padx = 10, pady = 10)
+f_top.pack(padx=10, pady=10)
+f_bot.pack(padx=10, pady=10)
 # у метода pack есть padx = 10, pady = 10 - внешний отступ, ipadx = 10, ipady = 10 - внутренний отступ
-l1.pack(side = LEFT)
-l2.pack(side = LEFT)
-l3.pack(side = LEFT)
-l4.pack(side = LEFT)
+l1.pack(side=LEFT)
+l2.pack(side=LEFT)
+l3.pack(side=LEFT)
+l4.pack(side=LEFT)
 
 root.mainloop()
