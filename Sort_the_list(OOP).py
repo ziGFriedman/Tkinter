@@ -4,9 +4,9 @@ from tkinter import *
 
 class Block:
     def __init__(self, master):
-        self.e = Entry(master, width = 20)
-        self.b = Button(master, text = "Преобразовать")
-        self.l = Label(master, bg = 'black', fg = 'white', width = 20)
+        self.e = Entry(master, width=20)
+        self.b = Button(master, text="Преобразовать")
+        self.l = Label(master, bg='black', fg='white', width=20)
         self.e.pack()
         self.b.pack()
         self.l.pack()
@@ -17,8 +17,9 @@ class Block:
         функции (в данном случае это метод) не требуется параметр event. В метод мы
         передаем только сам объект.'''
         self.b['command'] = eval('self.' + func)
-        
-# Функция eval() преобразует строку в исполняемый код. В результате получается self.b['command'] = self.strToSortlist или self.b['command'] = self.strReverse.
+
+# Функция eval() преобразует строку в исполняемый код. В результате получается
+# self.b['command'] = self.strToSortlist или self.b['command'] = self.strReverse.
 
     def strToSortlist(self):
         s = self.e.get()
