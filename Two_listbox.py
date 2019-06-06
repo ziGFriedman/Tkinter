@@ -23,26 +23,26 @@ def sel2():
             lBox.insert(END, lBox2.get(i))
             lBox2.delete(i)
 
-lBox = Listbox(fr1, selectmode = EXTENDED)
+lBox = Listbox(fr1, selectmode=EXTENDED)
 
 for i in fruits:
     lBox.insert(END, i)
 
-b1 = Button(fr2, width = 10, text = '>>>', command = sel)
-b2 = Button(fr2, width = 10, text = '<<<', command = sel2)
+b1 = Button(fr2, width=10, text='>>>', command=sel)
+b2 = Button(fr2, width=10, text='<<<', command=sel2)
 
 for i in fruits2:
     lBox.insert(END, i)
 
-lBox2 = Listbox(fr3, selectmode = EXTENDED)
+lBox2 = Listbox(fr3, selectmode=EXTENDED)
 
 lBox.pack()
 b1.pack()
 b2.pack()
 lBox2.pack()
 
-fr1.pack(side = LEFT)
-fr2.pack(side = LEFT)
-fr3.pack(side = LEFT)
+fr1.pack(side=LEFT)
+fr2.pack(side=LEFT)
+fr3.pack(side=LEFT)
 
 root.mainloop()
