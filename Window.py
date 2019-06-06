@@ -51,9 +51,9 @@ from tkinter import *
 
 root = Tk()
 
-Button(text = "Button", width = 20).pack()
-Label(text = "Label", width = 20, height = 3).pack()
-Button(text = "Button", width = 20).pack()
+Button(text="Button", width=20).pack()
+Label(text="Label", width=20, height=3).pack()
+Button(text="Button", width=20).pack()
 
 root.update_idletasks()
 s = root.geometry()
