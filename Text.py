@@ -8,7 +8,7 @@ from tkinter import *
 root = Tk()
 
 # Значение WORD опции wrap позволяет переносить слова на новую строку целиком, а не по буквам.
-text = Text(width = 25, height = 5, bg = "darkgreen", fg = 'white', wrap = WORD)
+text = Text(width=25, height=5, bg="darkgreen", fg='white', wrap=WORD)
 
 text.pack()
 root.mainloop()
@@ -21,13 +21,13 @@ from tkinter import *
 
 root = Tk()
 
-text = Text(width = 20, height = 7)
-text.pack(side = LEFT)
+text = Text(width=20, height=7)
+text.pack(side=LEFT)
 
-scroll = Scrollbar(command = text.yview)
-scroll.pack(side = LEFT, fill = Y)
+scroll = Scrollbar(command=text.yview)
+scroll.pack(side=LEFT, fill=Y)
 
-text.config(yscrollcommand = scroll.set)
+text.config(yscrollcommand=scroll.set)
 
 root.mainloop()
 # Здесь создается скроллер, к которому с помощью опции command привязывается прокрутка
